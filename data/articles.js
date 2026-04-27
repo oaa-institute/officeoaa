@@ -1,8 +1,386 @@
 window.oaArticles = [
 
   // ============================================================
+  // WEEK 4 — APRIL 27 – MAY 3, 2026 — ACT I: "THE RESPONSE"
+  // ============================================================
+
+  // SOCIAL #2 (week 4) — "This Week at the OAA" — Saturday May 2, 20:00
+  {
+    id: "social-week-4-this-week",
+    title: "This Week at the OAA — Week 4",
+    date: "2026-05-02",
+    publish_date: "2026-05-02T20:00",
+    status: "published",
+    thread: "multi",
+    format: "social-only",
+    author: "Astrid Vox",
+    authorId: "astrid-vox",
+    tags: ["Institution", "Research", "Accreditation", "Social"],
+    excerpt: "The OAA’s research project was renamed, reframed, and restarted this week. The deadline did not change. A logo is now needed.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `THIS WEEK AT THE OAA:\n\n• The research study was renamed, reframed, and restarted. The deadline is unchanged.\n• Form 7.4.2-B has been issued. One of three recipients cannot access it. The form required to access it requires Form 7.4.2-B.\n• The Research Excellence Initiative now needs a logo. The research has no data yet.\n\nThe OAA: where branding precedes evidence.\n\n#OAA #OfficeOfAlternateAcademia #AcademicLife #SatireAlert #HigherEd`,
+      instagram: `[VIDEO SCRIPT]
+
+VOICEOVER:
+This week at the OAA: a study was renamed, reframed, and restarted. The deadline did not change. A logo is needed by Friday. The logo is for the study. The study has no data yet. The OAA thanks you for your understanding.
+
+VISUAL:
+A calendar on a wall. Days being crossed off. A sticky note being replaced by another sticky note. A laptop screen showing an empty spreadsheet in a folder otherwise full of other empty spreadsheets.
+
+TONE: deadpan, melancholic`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#AcademicLife", "#SatireAlert", "#HigherEd", "#Research", "#Bureaucracy"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A wide desk with two nearly identical empty spreadsheets open side by side on two different laptops. Between them, a handwritten sticky note. In the background, a calendar on a wall with several days crossed out. The room is empty.\nMood: melancholic, absurd.\nNo text, no logos, no real people.`,
+      copy: `This week: the study was renamed. Then reframed. Then restarted. The deadline stayed where it was. A logo is now required. The data is not yet present. Progress continues.`
+    },
+    content: `<p>THIS WEEK AT THE OAA:</p><ul><li>The research project was renamed the OAA Research Excellence Initiative (OREI), reframed around a new central question, and restarted from a new baseline. The deadline is unchanged.</li><li>Form 7.4.2-B has been issued to three parties. One cannot access it. The form required to obtain access requires Form 7.4.2-B.</li><li>The OREI now requires a logo. Submissions are due by end of month. The research has not yet produced data.</li></ul><p>The OAA: where branding precedes evidence.</p>`
+  },
+
+  // BREAKING #4 — Rector OREI announcement — Friday May 1, 16:00
+  {
+    id: "rector-orei-announcement",
+    title: "Rector Renames Research Project the OAA Research Excellence Initiative; Requests Logo Concepts by End of Month",
+    date: "2026-05-01",
+    publish_date: "2026-05-01T16:00",
+    status: "published",
+    thread: "B",
+    format: "breaking",
+    author: "Astrid Vox",
+    authorId: "astrid-vox",
+    tags: ["Rector", "Research", "OREI", "Accreditation", "Branding"],
+    excerpt: "The Rector has issued a memo renaming the research output compliance project the OAA Research Excellence Initiative (OREI) and requesting logo concept submissions by end of month. The research itself is not mentioned in the memo.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `THE RESEARCH PROJECT NOW HAS A NAME.\n\nThe OAA Research Excellence Initiative (OREI).\n\nThe Rector’s memo: 312 words.\nMentions of the research itself: 0.\nLogo concepts requested: yes, by end of month.\nOREI steering committee: being formed.\nClara Quark on the steering committee: no.\n\nThe OAA: where naming a thing is the first step toward not doing the thing.\n\n#OAA #OfficeOfAlternateAcademia #RectorInfinitum #Research #Branding #AcademicLife`,
+      instagram: `[IMAGE CONCEPT]
+
+VISUAL: A figure in ornate academic robes holds up a freshly printed document with both hands, beaming. The document has a large empty box where a logo would go. On the table behind him, a thin folder sits unnoticed — it contains the actual research data.
+
+CAPTION: "The research now has a name."
+TONE: grandiose, absurd`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#RectorInfinitum", "#Research", "#HigherEd", "#AcademicHumor", "#SatireAlert"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A figure in ornate ceremonial academic robes holds up a freshly printed memo with both hands, looking triumphant. In the large empty space at the top of the document where a logo would appear, there is nothing. On the desk behind him, a thin folder sits in the corner — it contains the actual research. Nobody is looking at it.\nMood: grandiose, absurd.\nNo text, no logos, no real people.`,
+      copy: `The Rector has named the research project. It is now the OAA Research Excellence Initiative. A logo is needed. The research itself is not mentioned in the memo. Clara Quark is not on the steering committee. Progress is being made.`
+    },
+    content: `
+      <p>The Office of the Supreme Grand Rector Infinitum has issued a memo formally designating the institution’s research output compliance project as the OAA Research Excellence Initiative (OREI), effective immediately. The memo requests logo concept submissions from all departments by the end of the month.</p>
+
+      <p>The memo runs to 312 words. It describes the OREI as “a flagship demonstration of the OAA’s commitment to research-led excellence in an environment of strategic institutional evaluation.” The underlying research — currently in its second phase following a methodology revision earlier this week — is not referenced by name, question, or status.</p>
+
+      <p>An OREI Steering Committee is being formed. Membership criteria will be communicated via a forthcoming memo. Clara Quark, Student Research Volunteer Coordinator (Acting), who is conducting the research, is not listed among the anticipated committee members. Dean Bugsy’s office confirmed that committee formation is “procedurally separate from research coordination.”</p>
+
+      <p>Logo concepts may be submitted in any format to the Office of Communications by April 30. Dr. Astrid Vox has confirmed that the OAA “looks forward to a visual identity that reflects the energy of our research ambitions.” She did not specify what those ambitions currently are.</p>
+    `
+  },
+
+  // BREAKING #3 — Max laptop returned — Friday May 1, 12:00
+  {
+    id: "max-laptop-returned",
+    title: "Max Afterparty Retrieves Research Laptop; Returns It Following Day Without Explanation",
+    date: "2026-05-01",
+    publish_date: "2026-05-01T12:00",
+    status: "published",
+    thread: "C",
+    format: "breaking",
+    author: "Max Afterparty",
+    authorId: "max-afterparty",
+    tags: ["Max Afterparty", "Clara Quark", "Research"],
+    excerpt: "Max Afterparty retrieved his laptop from Clara Quark on Thursday, citing an unspecified need. He returned it the following morning. He had added a bookmark. The bookmark was for a different pasta recipe.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `MAX AFTERPARTY RETRIEVED HIS LAPTOP.\n\nHe needed it for something.\nHe returned it the next morning.\nHe did not explain.\n\nThe original pasta recipe tab was still open.\nHe had added a bookmark.\nThe bookmark was for a different pasta recipe.\n\nThe OAA: where the data collection continues regardless.\n\n#OAA #OfficeOfAlternateAcademia #MaxAfterparty #AcademicLife #AcademicHumor`,
+      instagram: `[IMAGE CONCEPT]
+
+VISUAL: A young man in sunglasses stands in a doorway, holding a laptop out at arm's length to return it. His expression is neutral. On the laptop screen, two pasta recipe tabs are visible among a dozen others. A sticky note on the back of the laptop reads "RESEARCH."
+
+CAPTION: "Returned. No explanation."
+TONE: absurd, deadpan`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#MaxAfterparty", "#AcademicLife", "#AcademicHumor", "#Research"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A young man in sunglasses holds a laptop out toward someone off-screen, expression neutral and unhurried. Several browser tabs are visible on the screen. He appears to have nothing further to say about the matter.\nMood: absurd, casual.\nNo text, no logos, no real people.`,
+      copy: `Max Afterparty took his laptop back on Thursday. He needed it for something. He returned it Friday morning. The pasta recipe tab was still open. He had bookmarked a second pasta recipe. No explanation was provided. The research continues.`
+    },
+    content: `
+      <p>Max Afterparty retrieved his laptop from Clara Quark on Thursday morning, stating that he needed it “for something.” He did not elaborate. Quark transferred her working files to a USB drive and returned the device. Afterparty left.</p>
+
+      <p>He returned the laptop the following morning. The pasta recipe tab was still open. He had added one bookmark during the interim. The bookmark was for a different pasta recipe. When asked about this, Afterparty said it was “a better one.” He did not confirm whether he had made either recipe. He set the laptop on the table and left without sitting down.</p>
+
+      <p>Data collection resumed. The USB transfer had preserved all files. The research project is now formally designated the OAA Research Excellence Initiative (OREI), a development Afterparty said he was “pretty sure” he had heard about. He thought it was “nice that it had a name now.”</p>
+    `
+  },
+
+  // SOCIAL MICRO #1 — Institutional stat — Thursday April 30, 17:00
+  {
+    id: "social-week-4-research-stats",
+    title: "This Week in Numbers — The Research Project",
+    date: "2026-04-30",
+    publish_date: "2026-04-30T17:00",
+    status: "published",
+    thread: "B",
+    format: "social-only",
+    author: "Astrid Vox",
+    authorId: "astrid-vox",
+    tags: ["Research", "Prof. Calculon", "Clara Quark", "Social", "OREI"],
+    excerpt: "A numerical summary of the OAA Research Excellence Initiative’s first full week: two spreadsheets, three research question reformulations, one laptop retrieval, and a logo request.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `📊 THIS WEEK AT THE OAA — BY THE NUMBERS:\n\n1: Original research question\n3: Times the research question has been “refined”\n2: Active spreadsheets (data_v1.xlsx, data_v2.xlsx)\n0: Rows of data in either spreadsheet\n247: Words in Oliver Grant’s introductory email\n2: Mentions of Clara Quark in Oliver Grant’s email\n9: Mentions of Oliver Grant in Oliver Grant’s email\n1: Laptop retrieved and returned without explanation\n1: Logo requested for a study with no data\n\nAll figures provisional pending OREI Steering Committee formation.\n\n#OAA #OfficeOfAlternateAcademia #Research #AcademicHumor #OREI`,
+      instagram: `[IMAGE CONCEPT]
+
+VISUAL: Two identical-looking empty spreadsheets open side by side on a desk, labeled v1 and v2. Between them: a sticky note counting "Refinements: 3." In the corner, a logo-shaped empty box on a piece of paper. No data is visible anywhere.
+
+CAPTION: "Progress. Measurable progress."
+TONE: deadpan`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#Research", "#AcademicHumor", "#OREI", "#HigherEd", "#AcademicTwitter"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A desk with two open laptops showing near-identical empty spreadsheets. Between them, a handwritten tally on a notepad. A separate sheet of paper to the side has a large empty circle drawn on it — a logo placeholder. No data is visible in any document.\nMood: absurd, deadpan.\nNo text, no logos, no real people.`,
+      copy: `Two spreadsheets. Zero data rows in either. Three research question refinements. One email of 247 words in which Oliver Grant mentioned himself nine times. One laptop, returned with a new pasta bookmark. All figures are provisional.`
+    },
+    content: `<p>📊 THIS WEEK AT THE OAA — BY THE NUMBERS:</p><ul><li>1: Original research question (retired)</li><li>3: Times the research question has been refined this week</li><li>2: Active spreadsheets (data_v1.xlsx, data_v2.xlsx)</li><li>0: Rows of data in either spreadsheet</li><li>247: Words in Oliver Grant’s introductory email to the research team</li><li>2: Mentions of Clara Quark in Oliver Grant’s email</li><li>9: Mentions of Oliver Grant in Oliver Grant’s email</li><li>1: Laptop retrieved and returned within 24 hours, reason unstated</li><li>1: Logo requested for a study currently without data</li></ul><p>All figures are provisional pending formation of the OREI Steering Committee.</p>`
+  },
+
+  // BREAKING #2 — Oliver joins as student liaison — Thursday April 30, 09:00
+  {
+    id: "oliver-research-liaison",
+    title: "Oliver Grant Joins Research Project as Student Liaison; Introductory Email Contains Nine References to Oliver Grant",
+    date: "2026-04-30",
+    publish_date: "2026-04-30T09:00",
+    status: "published",
+    thread: "C",
+    format: "breaking",
+    author: "Oliver Grant",
+    authorId: "oliver-grant",
+    tags: ["Oliver Grant", "Research", "Clara Quark", "OREI"],
+    excerpt: "Oliver Grant has announced his participation in the OAA research project as Student Liaison and External Perspective Contributor. His introductory email was 247 words. Clara Quark’s name appeared twice. Oliver Grant’s name appeared nine times.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `OLIVER GRANT HAS JOINED THE RESEARCH PROJECT.\n\nRole: Student Liaison and External Perspective Contributor.\nAsked to join: no.\nEmail word count: 247.\nMentions of Clara Quark: 2.\nMentions of Oliver Grant: 9.\nAttachment: Oliver_Grant_Student_Voice_Framework_v3.docx (1 page, includes photo).\n\nThe OAA: where participation is self-assigned and emails are long.\n\n#OAA #OfficeOfAlternateAcademia #OliverGrant #Research #AcademicLife`,
+      instagram: `[VIDEO SCRIPT]
+
+VOICEOVER:
+Oliver Grant has joined the research project. He was not asked. He sent an email. The email was 247 words. His name appeared nine times. Clara Quark's name appeared twice. He attached a document. The document was one page. It contained his photo.
+
+VISUAL:
+A laptop screen showing an email being composed. A word counter climbs steadily. A small annotation appears: "Mentions — Clara: 2. Oliver: 9." The attachment icon appears. The send button is clicked.
+
+TONE: deadpan`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#OliverGrant", "#Research", "#AcademicLife", "#AcademicHumor", "#LinkedIn"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A well-dressed young man sits at a desk composing an email, phone propped beside the laptop displaying his LinkedIn profile. His expression is one of focused self-satisfaction. The laptop screen is long with text. An attachment icon is visible.\nMood: self-important, oblivious.\nNo text, no logos, no real people.`,
+      copy: `Oliver Grant has joined the research project as Student Liaison and External Perspective Contributor. He was not invited. His first contribution was a 247-word email in which he referenced himself nine times and Clara Quark twice. He attached his Student Voice Framework. It was one page. It had his photo.`
+    },
+    content: `
+      <p>Oliver Grant, Student Representative, has announced his participation in the OAA’s research output compliance project in the capacity of “Student Liaison and External Perspective Contributor.” The announcement was made via email to Clara Quark, the project’s lead researcher. Quark had not requested a liaison. The role did not previously exist.</p>
+
+      <p>Grant’s introductory email was 247 words. Clara Quark’s name appears twice, both in the opening salutation and a closing acknowledgment that she is “doing great work.” Oliver Grant’s name, LinkedIn headline, and variations thereof appear nine times across the body of the email. Grant describes the collaboration as “an opportunity to bring the student voice into a process that has historically lacked it,” a characterization of the research project that Quark, who is a student, did not immediately comment on.</p>
+
+      <p>The email included one attachment: <em>Oliver_Grant_Student_Voice_Framework_v3.docx.</em> The document is one page. It contains a framework diagram, a bullet list of Grant’s “core contribution areas,” and a professional photograph of Oliver Grant. The photograph takes up approximately forty percent of the page.</p>
+
+      <p>Grant confirmed he is “fully available” to contribute to the project and has blocked time in his calendar for “synchronization sessions.” He has not yet been told what the research question is. He has updated his LinkedIn headline to include “Research Collaborator — OREI (OAA).”</p>
+    `
+  },
+
+  // FOUND MEMO — Calculon Phase 2 parameters — Wednesday April 29, 19:00
+  {
+    id: "calculon-phase-2-parameters",
+    title: "Internal Memorandum: OAA Research Excellence Initiative — Phase 2 Parameter Revision and Question Refinement",
+    date: "2026-04-29",
+    publish_date: "2026-04-29T19:00",
+    status: "published",
+    thread: "B",
+    format: "found-memo",
+    author: "Prof. Arjun Calculon",
+    authorId: "arjun",
+    tags: ["Prof. Calculon", "Research", "OREI", "Clara Quark", "Found Document"],
+    excerpt: "Prof. Calculon’s internal memo formalizing the Phase 2 research question contains three bullet points. All three say the same thing. All three are described as fundable.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `FOUND DOCUMENT — PROF. CALCULON’S PHASE 2 MEMO\n\nThe revised research question, three ways:\n\n1. “A longitudinal examination of excellence metric convergence in self-assessing institutions during periods of external review.”\n2. “Quantitative modeling of institutional readiness indicators across accreditation-adjacent temporal windows.”\n3. “An empirical framework for excellence verification in environments where excellence remains the primary measurable variable.”\n\nAll three are the same question.\nAll three are described as “fundable.”\n\n#OAA #OfficeOfAlternateAcademia #ProfCalculon #FoundDocument #Research #AcademicLife`,
+      instagram: `[IMAGE CONCEPT]
+
+VISUAL: A whiteboard with three bullet points written in neat academic handwriting. Each point is slightly longer than the last. A red marker has underlined the word "fundable" beneath each one. They all say the same thing.
+
+CAPTION: "Three questions. One question. Fully fundable."
+TONE: deadpan`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#ProfCalculon", "#FoundDocument", "#Research", "#AcademicLife", "#GrantLife"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A close view of a whiteboard with three bullet points written in careful handwriting. Each line is slightly longer than the previous. A circle has been drawn around a word near the bottom of each line. The professor stands to the side, satisfied, pointer in hand.\nMood: earnest, absurd.\nNo text, no logos, no real people.`,
+      copy: `Prof. Calculon has formalized the Phase 2 research question. There are three versions. They all say the same thing. All three are described as fundable. The dataset is being rebuilt. The timeline is unchanged.`
+    },
+    content: `
+      <p>TO: Clara Quark, Student Research Volunteer Coordinator (Acting)<br>
+      FROM: Prof. Arjun Calculon, Head of Department, Computational Everything<br>
+      DATE: April 29, 2026<br>
+      RE: OAA Research Excellence Initiative (OREI) — Phase 2 Research Parameters<br>
+      CC: OREI Steering Committee (forming)</p>
+
+      <p>This memorandum formalizes the revised central research question for the OREI Phase 2 study, following Tuesday’s productive working session. The question has been refined to better reflect current methodological standards and fundability considerations. Three formulations are provided below; all are considered equivalent and may be used interchangeably depending on audience context.</p>
+
+      <p><strong>Formulation A</strong> (for academic submissions): “A longitudinal examination of excellence metric convergence in self-assessing institutions during periods of external review.”</p>
+
+      <p><strong>Formulation B</strong> (for grant applications): “Quantitative modeling of institutional readiness indicators across accreditation-adjacent temporal windows.”</p>
+
+      <p><strong>Formulation C</strong> (for internal reporting): “An empirical framework for excellence verification in environments where excellence remains the primary measurable variable.”</p>
+
+      <p>All three formulations are fundable. The dataset should be rebuilt from the revised baseline at your earliest convenience. The original dataset (data_v1.xlsx) may be archived but should be retained as a methodological reference. The new dataset (data_v2.xlsx) will serve as the primary working document going forward.</p>
+
+      <p>Timeline: unchanged. Please confirm receipt of this memo at your convenience.</p>
+
+      <p>Technical appendix: forthcoming.</p>
+
+      <p>— Prof. Arjun Calculon<br>
+      Head of Department, Computational Everything<br>
+      <em>P.S. The three formulations are, in measurable terms, the same question. This is intentional. The redundancy increases perceived robustness.</em></p>
+    `
+  },
+
+  // BREAKING #1 — Bugsy Form 7.4.2-B processed — Wednesday April 29, 12:00
+  {
+    id: "bugsy-form-742-b-processed",
+    title: "Form 7.4.2-B Issued to Three Parties; One Recipient Unable to Access It Pending Documentation That Requires Form 7.4.2-B",
+    date: "2026-04-29",
+    publish_date: "2026-04-29T12:00",
+    status: "published",
+    thread: "A",
+    format: "breaking",
+    author: "Dean Bugsy",
+    authorId: "dean-bugsy",
+    tags: ["Dean Bugsy", "AAD", "Administration", "Forms", "Accreditation"],
+    excerpt: "Form 7.4.2-B has been issued to three institutional parties following completion of the Form 7.4.2-A processing cycle. One recipient cannot access the form due to an outstanding AAD Class II requirement, which itself requires Form 7.4.2-B.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `FORM 7.4.2-B HAS BEEN ISSUED.\n\nThree parties received it.\nOne party cannot access it.\n\nThe reason: an outstanding AAD Class II documentation requirement.\nThe form required to resolve the AAD Class II requirement: Form 7.4.2-B.\n\n“The process is proceeding as designed,” — Dean Bugsy\n\n#OAA #OfficeOfAlternateAcademia #DeanBugsy #Bureaucracy #AcademicLife #AcademicHumor`,
+      instagram: `[IMAGE CONCEPT]
+
+VISUAL: Three envelopes on a desk. Two are being picked up by visible hands. The third sits slightly apart, with a small "ACCESS DENIED" label stuck to it. Next to it: a form, which has a small note reading "Requires: Form 7.4.2-B."
+
+CAPTION: "The process is proceeding as designed."
+TONE: bureaucratic serenity`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#DeanBugsy", "#Bureaucracy", "#AcademicLife", "#AcademicHumor", "#HigherEd"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A middle-aged administrator stands at a desk with three identical envelopes. Two have been collected. The third sits alone with a small label on it. Beside it, a form with a circular arrow pointing back to the envelope. The administrator’s expression is calm and procedurally satisfied.\nMood: bureaucratic serenity.\nNo text, no logos, no real people.`,
+      copy: `Form 7.4.2-B has been issued. Three parties received it. One cannot open it — they have an outstanding AAD Class II requirement. Resolving it requires Form 7.4.2-B. Dean Bugsy confirmed the process is proceeding as designed.`
+    },
+    content: `
+      <p>Dean Bugsy’s office has confirmed the completion of the Form 7.4.2-A processing cycle, resulting in the issuance of Form 7.4.2-B to three institutional parties. Form 7.4.2-B is the prerequisite document required to access Form 7.4.2-AAD, the primary submission instrument for Accreditation-Adjacent Documentation (AAD).</p>
+
+      <p>Of the three recipients, two have confirmed receipt and are proceeding through the Form 7.4.2-B completion pathway. The third party is currently unable to access the document due to an outstanding AAD Class II documentation requirement on their institutional record. The form required to resolve an outstanding AAD Class II requirement is Form 7.4.2-B.</p>
+
+      <p>“The process is proceeding as designed,” Dean Bugsy said in a written statement. “All parties are encouraged to consult the applicable procedural guidelines.” The applicable procedural guidelines are available via AAD Class I request. The form for this is Form 7.4.2-A, which has been processed.</p>
+
+      <p>The third party has been notified of their outstanding requirement. Notification was sent via the standard administrative communication pathway. Confirmation of receipt requires Form Q-001.</p>
+    `
+  },
+
+  // ANCHOR — Calculon arrives, first research reframe — Tuesday April 28, 09:00
+  {
+    id: "calculon-research-phase-2-reframe",
+    title: "Prof. Calculon Joins Research Project; Study Enters Phase 2 With New Question, New Dataset, Unchanged Deadline",
+    date: "2026-04-28",
+    publish_date: "2026-04-28T09:00",
+    status: "published",
+    thread: "B",
+    format: "anchor",
+    author: "Clara Quark",
+    authorId: "clara-quark",
+    tags: ["Clara Quark", "Prof. Calculon", "Research", "OREI", "Accreditation"],
+    excerpt: "Prof. Calculon arrived Tuesday to assist with the OAA’s research output compliance project. After 47 minutes of independent analysis, he proposed a refined research question. Clara Quark opened data_v2.xlsx. data_v1.xlsx remains on the desktop.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `THE STUDY HAS A NEW QUESTION.\n\nProf. Calculon arrived on Tuesday to help. He reviewed data_v1.xlsx. He went quiet for 47 minutes. He returned with a refined research question.\n\nThe original question: what is the institution’s research output?\nThe new question: an empirical framework for excellence verification in environments where excellence is the primary measurable variable.\n\nClara Quark opened data_v2.xlsx. data_v1.xlsx remains on the desktop.\n\nThe deadline is unchanged.\n\n#OAA #OfficeOfAlternateAcademia #ProfCalculon #ClaraQuark #Research #AcademicLife`,
+      instagram: `[VIDEO SCRIPT]
+
+VOICEOVER:
+On Tuesday, Prof. Calculon arrived to help. He reviewed the research question. He went quiet for 47 minutes. When he returned, the question was different. The deadline was not.
+
+VISUAL:
+A whiteboard filled with equations. One word is erased. A longer phrase replaces it. More equations follow. A second spreadsheet opens on a laptop. The first spreadsheet is still visible in the corner of the screen, untouched.
+
+TONE: deadpan`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#ProfCalculon", "#ClaraQuark", "#Research", "#AcademicLife", "#HigherEd"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A small office with a whiteboard covered in equations and a visible erasure mark where something simpler used to be written. A disheveled professor with glasses stands at the whiteboard looking satisfied. A young woman in a university hoodie sits at a table with two laptops in front of her — one has a nearly empty spreadsheet open, the other is just being opened. Her expression is carefully neutral.\nMood: melancholic, absurd, quietly resigned.\nNo text, no logos, no real people.`,
+      copy: `Prof. Calculon has joined the research project. He reviewed the question, went silent for 47 minutes, and returned with a refined version. The question is now three sentences long and fundable. The deadline is the same. Clara has opened data_v2.xlsx.`
+    },
+    content: `
+      <p>Prof. Arjun Calculon, Head of the Department of Computational Everything, arrived at the departmental common room on Tuesday morning to assist with the OAA’s research output compliance project. He reviewed the current research question, examined data_v1.xlsx, and asked several clarifying questions. He then went quiet for 47 minutes, during which he filled one side of a portable whiteboard with equations, three of which he later crossed out. Clara Quark waited. She finished her coffee and started a second one.</p>
+
+      <p>At 10:52 a.m., Prof. Calculon announced that the research question, as currently formulated, was “narrow in ways that limit its fundability.” He proposed a revised formulation, which he described as “both more rigorous and more adjacent to current funding landscapes.” The original question — a straightforward examination of the institution’s verifiable research output against GASC compliance benchmarks — was, he noted, “fine, but not the right level of abstraction.”</p>
+
+      <p>The revised question, as stated, is: “An empirical framework for excellence verification in environments where excellence remains the primary measurable variable.” Quark asked whether this was the same question. Prof. Calculon said it was “adjacent.” He added that the dataset would need to be rebuilt from a revised baseline, as the original data structure was “optimized for the previous framing.” He described this as “not unusual at this stage.”</p>
+
+      <p>Quark opened a new spreadsheet. She named it data_v2.xlsx and began transferring the column structure. data_v1.xlsx remained open in the background. Prof. Calculon expressed satisfaction with the direction and noted that a full methodology document would follow “in the coming days.” He left at 11:34 a.m. to attend a separate meeting, the subject of which he did not share.</p>
+
+      <p>This is the first revision to the study’s central research question. The compliance deadline has not changed.</p>
+    `
+  },
+
+  // ============================================================
+  // WEEK 3 — APRIL 20–26, 2026 — ACT I: "THE RESPONSE"
+  // ============================================================
+
+  // SOCIAL (week 3) — "This Week at the OAA" — Saturday April 26, 20:00
+  {
+    id: "social-week-3-this-week",
+    title: "This Week at the OAA — Week 3",
+    date: "2026-04-26",
+    publish_date: "2026-04-26T20:00",
+    status: "published",
+    thread: "multi",
+    format: "social-only",
+    author: "Astrid Vox",
+    authorId: "astrid-vox",
+    tags: ["Institution", "Social", "Accreditation"],
+    excerpt: "The OAA’s weekly activity summary for the week of April 20–26 is pending completion of the relevant documentation. Activity occurred.",
+    coverImage: "",
+    coverAlt: "",
+    social: {},
+    content: `
+      <p>The Office of Alternate Academia’s weekly institutional activity summary for the period April 20–26, 2026 is currently pending completion of the relevant documentation.</p>
+
+      <p>Activity occurred. The nature of the activity is being processed through appropriate channels. A summary will be issued upon completion of internal review.</p>
+
+      <p>The OAA thanks the community for its continued patience. This patience has been noted.</p>
+    `
+  },
+
+  // ANCHOR — Clara’s first day as research coordinator — Tuesday April 21, 09:00
+  {
+    id: "clara-first-day-research-coordinator",
+    title: "Student Research Volunteer Coordinator Begins Data Collection; Institutional Database Access Requires Faculty Status",
+    date: "2026-04-21",
+    publish_date: "2026-04-21T09:00",
+    status: "published",
+    thread: "B",
+    format: "anchor",
+    author: "Clara Quark",
+    authorId: "clara-quark",
+    tags: ["Clara Quark", "Research", "Accreditation", "Prof. Calculon", "Max Afterparty"],
+    excerpt: "Clara Quark began formal data collection for the OAA’s research output compliance project on Tuesday. By 10:15 a.m., she had been denied access to two institutional databases, failed to locate the research laptop, and received an email from Prof. Calculon informing her that the research question had been refined.",
+    coverImage: "",
+    coverAlt: "",
+    social: {},
+    content: `
+      <p>Clara Quark, Student Research Volunteer Coordinator (Acting) at the Office of Alternate Academia, began formal data collection for the institution’s research output compliance project on Tuesday. By 10:15 a.m., she had been denied access to two institutional databases, determined that the departmental research laptop was not available, and received an email from Prof. Arjun Calculon informing her that the research question had been “refined.” She had been in the role for six days.</p>
+
+      <p>The first denial came from the OAA Library’s institutional database portal, which requires a faculty or postdoctoral account for full access. Quark’s student account returned a message confirming she was “not currently authorized” for the databases relevant to the study, but was eligible for “a curated selection of open-access resources.” The curated selection contained eleven items. Four were duplicates. Two were the same paper under different titles.</p>
+
+      <p>The departmental research coordination laptop — one of two devices registered to the Department of Computational Everything for external research loan — has been signed out since February of last year to “administrative continuity purposes.” The sign-out form lists no return date. The form was submitted by Dean Bugsy’s office. Dean Bugsy’s office confirmed that the device was “currently in active administrative use” and that a request for its return would need to be submitted via AAD Class II documentation. The form for this was not yet available.</p>
+
+      <p>Quark set up at a table in the departmental common room using her personal laptop. At approximately 9:50 a.m., Max Afterparty passed through the room, observed the situation without comment, and offered his laptop. Quark accepted. Afterparty provided the password and left without asking what it was for. His laptop had twelve browser tabs open. One of them was a recipe for pasta. He did not explain this.</p>
+
+      <p>At 11:47 a.m., an email arrived from Prof. Calculon. The subject line read: “Research Direction — Minor Update.” The email confirmed that the study’s central research question had been “refined slightly to better reflect current funding landscapes” and that the original dataset would need to be “rebuilt from a revised baseline.” Prof. Calculon noted that this was “not unusual at this stage of a project” and expressed confidence in the timeline. He added a postscript: “This is fine.”</p>
+
+      <p>Quark read the email. She opened a new spreadsheet. She named it <em>data_v1.xlsx</em> and began entering column headers.</p>
+
+      <p>The institution has not formally acknowledged that this work is taking place. The compliance deadline remains unchanged.</p>
+    `
+  },
+
+  // ============================================================
   // WEEK 2 — APRIL 13–19, 2026 — ACT I: "THE RESPONSE"
-  // WEEK 2 — APRIL 13–19, 2026 — ACT II: "THE RECOGNITION"
   // ============================================================
 
   // SOCIAL #3 (week 2) — "This Week at the OAA" — Saturday April 18, 20:00
