@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Story So Far | The Office of Alternate Academia</title>
+  <meta name="description" content="A narrative account of ongoing events at the Office of Alternate Academia — arranged by institutional arc." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700;1,900&family=DM+Sans:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="site-shell">
+
+    <header class="topbar compact">
+      <a href="index.html" class="brand">
+        <span class="brand-mark"><img id="brandLogo" src="images/logo_dark.png" alt="OAA"></span>
+        <div>
+          <p class="eyebrow">Satirical Academic Intelligence Bulletin</p>
+          <h1>The Office of Alternate Academia</h1>
+        </div>
+      </a>
+      <div class="topbar-actions">
+        <nav class="topnav">
+          <a href="index.html#latest">News</a>
+          <a href="story.html" class="active">Story</a>
+          <a href="index.html#characters">Characters</a>
+          <a href="media.html">Media</a>
+          <a href="publication.html">Publications</a>
+          <a href="index.html#about">About</a>
+        </nav>
+        <button id="themeToggle" class="theme-toggle" type="button" aria-label="Toggle theme">
+          <span class="theme-toggle-icon">◐</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="storyMain">
+
+      <div class="story-hero">
+        <div class="story-hero-inner">
+          <p class="eyebrow">Narrative record</p>
+          <h2 id="storyTitle"></h2>
+          <p class="story-hero-sub" id="storySubtitle"></p>
+        </div>
+      </div>
+
+      <div id="storyActs"></div>
+
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>© The Office of Alternate Academia — Officially unofficial, institutionally unstable.</p>
+        <div class="footer-meta-links">
+          <a href="privacy.html">Privacy & GDPR</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+        <div class="social-links" aria-label="Social media links">
+          <a href="https://www.facebook.com/officeoaa" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+            <span class="social-icon">f</span>
+            <span>Facebook</span>
+          </a>
+          <a href="https://www.instagram.com/officeoaa" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <span class="social-icon">◎</span>
+            <span>Instagram</span>
+          </a>
+          <a href="https://www.youtube.com/@officeoaa" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+            <span class="social-icon">▶</span>
+            <span>YouTube</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script src="data/articles.js"></script>
+  <script src="data/story.js"></script>
+  <script src="app.js"></script>
+  <script>
+  (function () {
+
+    // ── helpers ───────────────────────────────────────────────────────────────
+
+    function dateStr(article) {
+      return (article.publish_date || article.date || '').slice(0, 10);
+    }
+
+    function isPublishedArticle(a) {
+      if (a.status === 'draft') return false;
+      if (!a.publish_date) return true;
+      return new Date(a.publish_date) <= new Date();
+    }
+
+    function isAnchorFormat(a) {
+      return !a.format || a.format === 'anchor';
+    }
+
+    function inRange(dateISO, startDate, endDate) {
+      if (!dateISO) return false;
+      const d = dateISO.slice(0, 10);
+      if (d < startDate) return false;
+      if (endDate && d > endDate) return false;
+      return true;
+    }
+
+    // Related dispatches: non-anchor articles within ±7 days of the anchor
+    function nearbyDispatches(anchorDate, allNonAnchor) {
+      const base = new Date(anchorDate + 'T00:00:00').getTime();
+      const WINDOW_MS = 7 * 24 * 60 * 60 * 1000;
+      return allNonAnchor.filter(a => {
+        const d = dateStr(a);
+        if (!d) return false;
+        const t = new Date(d + 'T00:00:00').getTime();
+        return Math.abs(t - base) <= WINDOW_MS;
+      });
+    }
+
+    const FORMAT_LABELS = {
+      'breaking':             'Breaking',
+      'found-memo':           'Memo',
+      'found-press-release':  'Press Release',
+      'social-only':          'Social'
+    };
+
+    // ── render helpers ────────────────────────────────────────────────────────
+
+    function renderDispatch(a) {
+      const label = FORMAT_LABELS[a.format] || 'News';
+      const badgeClass = a.format === 'breaking' ? 'breaking'
+                       : a.format && a.format.startsWith('found') ? 'found'
+                       : 'social';
+      return `<li>
+        <span class="format-badge format-badge--${badgeClass}">${label}</span>
+        <a href="article.html?id=${a.id}">${a.title}</a>
+      </li>`;
+    }
+
+    // Build a timeline card (used inside .story-tl-item)
+    function renderChapterCard(anchor, dispatches) {
+      const hasImage = isAnchorFormat(anchor) && anchor.coverImage;
+      const imgHtml = hasImage
+        ? `<div class="tl-card-image">
+             <img src="${anchor.coverImage}" alt="${anchor.coverAlt || anchor.title}" loading="lazy">
+           </div>`
+        : '';
+
+      const dispatchHtml = dispatches.length > 0
+        ? `<div class="story-dispatches">
+             <p class="story-dispatches-label">Related dispatches</p>
+             <ul class="story-dispatches-list">
+               ${dispatches.map(renderDispatch).join('')}
+             </ul>
+           </div>`
+        : '';
+
+      const authorHtml = anchor.author
+        ? `<span class="sep">·</span><span>${anchor.author}</span>`
+        : '';
+
+      return `<div class="tl-card">
+        ${imgHtml}
+        <div class="tl-card-body">
+          <div class="story-chapter-meta">
+            <span>${formatDate(anchor.date || anchor.publish_date)}</span>
+            ${authorHtml}
+          </div>
+          <h3 class="story-chapter-title">
+            <a href="article.html?id=${anchor.id}">${anchor.title}</a>
+          </h3>
+          <p class="story-chapter-excerpt">${anchor.excerpt || ''}</p>
+          ${dispatchHtml}
+          <div class="story-chapter-footer">
+            <a class="button secondary" href="article.html?id=${anchor.id}">Read the full account →</a>
+          </div>
+        </div>
+      </div>`;
+    }
+
+    // Wrap a card in a timeline row (alternating left / right)
+    function renderTimelineItem(anchor, dispatches, side) {
+      const card = renderChapterCard(anchor, dispatches);
+      const dot  = `<div class="story-tl-node"><div class="story-tl-dot"></div></div>`;
+      const gap  = `<div class="story-tl-space"></div>`;
+      return side === 'left'
+        ? `<div class="story-tl-item tl-left">${card}${dot}${gap}</div>`
+        : `<div class="story-tl-item tl-right">${gap}${dot}${card}</div>`;
+    }
+
+    function renderAct(act, anchors, nonAnchors) {
+      const statusClass = act.status === 'ongoing' ? 'ongoing'
+                        : act.status === 'closed'   ? 'closed'
+                        : 'upcoming';
+      const statusLabel = act.status === 'ongoing' ? 'Ongoing'
+                        : act.status === 'closed'   ? 'Closed'
+                        : 'Upcoming';
+
+      const labelText = act.number ? `${act.label} · ${act.number}` : act.label;
+      const decoText  = act.number || (act.label || '').slice(0, 4).toUpperCase();
+
+      // ── Overview card (always shown) ──
+      const upcomingNote = act.status === 'upcoming'
+        ? `<p class="story-act-upcoming-note">This arc has not yet begun. The institution is, however, already preparing documentation.</p>`
+        : '';
+      const proseHtml = act.summary
+        ? `<div class="story-act-prose">${act.summary}</div>`
+        : '';
+
+      const overviewCard = `
+        <div class="story-act-overview">
+          <div class="story-act-deco" aria-hidden="true">${decoText}</div>
+          <div class="story-act-overview-meta">
+            <span class="story-act-label ${statusClass}">${labelText} · ${statusLabel}</span>
+            <span class="story-act-period">${act.period}</span>
+          </div>
+          <h2>"${act.title}"</h2>
+          ${proseHtml}
+          ${upcomingNote}
+        </div>`;
+
+      // ── Timeline (only for ongoing / closed) ──
+      let timelineHtml = '';
+      if (act.status !== 'upcoming') {
+        const actAnchors = anchors
+          .filter(a => inRange(dateStr(a), act.startDate, act.endDate))
+          .sort((a, b) => dateStr(b).localeCompare(dateStr(a)));  // newest first
+
+        if (actAnchors.length > 0) {
+          const rows = actAnchors.map((anchor, i) => {
+            const d = dateStr(anchor);
+            const related = nearbyDispatches(d, nonAnchors.filter(
+              a => inRange(dateStr(a), act.startDate, act.endDate)
+            ));
+            return renderTimelineItem(anchor, related, i % 2 === 0 ? 'left' : 'right');
+          }).join('');
+          timelineHtml = `<div class="story-timeline">${rows}</div>`;
+        } else {
+          timelineHtml = `<p class="story-no-chapters">No accounts have been filed for this arc yet.</p>`;
+        }
+      }
+
+      return `
+        <section class="story-act" id="${act.id}">
+          ${overviewCard}
+          ${timelineHtml}
+        </section>`;
+    }
+
+    // ── main render ───────────────────────────────────────────────────────────
+
+    const story = window.oaStory;
+    if (!story) return;
+
+    document.getElementById('storyTitle').textContent = story.title;
+    document.getElementById('storySubtitle').textContent = story.subtitle;
+
+    const allPublished = (window.oaArticles || []).filter(isPublishedArticle);
+    const anchors    = allPublished.filter(isAnchorFormat);
+    const nonAnchors = allPublished.filter(a => !isAnchorFormat(a));
+
+    // Sort acts: ongoing first (newest startDate), then closed (newest first), then upcoming (nearest first)
+    const STATUS_ORDER = { ongoing: 0, closed: 1, upcoming: 2 };
+    const sortedActs = [...story.acts].sort((a, b) => {
+      const so = (STATUS_ORDER[a.status] ?? 9) - (STATUS_ORDER[b.status] ?? 9);
+      if (so !== 0) return so;
+      // Within same status: ongoing/closed → newest startDate first; upcoming → nearest startDate first
+      if (a.status === 'upcoming') return a.startDate.localeCompare(b.startDate);
+      return b.startDate.localeCompare(a.startDate);
+    });
+
+    const actsContainer = document.getElementById('storyActs');
+    actsContainer.innerHTML = sortedActs
+      .map(act => renderAct(act, anchors, nonAnchors))
+      .join('');
+
+  })();
+  </script>
+</body>
+</html>
