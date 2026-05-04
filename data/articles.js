@@ -1,4 +1,380 @@
 window.oaArticles = [
+  // ============================================================
+  // WEEK 5 — MAY 4–10, 2026 — ACT I: "THE RESPONSE"
+  // ============================================================
+
+  // SOCIAL #2 (week 5) — "This Week at the OAA" — Saturday May 9, 17:00
+  {
+    id: "social-week-5-this-week",
+    title: "This Week at the OAA — Week 5",
+    date: "2026-05-09",
+    publish_date: "2026-05-09T17:00",
+    status: "published",
+    thread: "multi",
+    format: "social-only",
+    author: "Astrid Vox",
+    authorId: "astrid-vox",
+    tags: ["Institution", "Research", "Accreditation", "Social"],
+    excerpt: "Dr. Cashburn joined the OREI with a color-coded binder. The research question was refined for a third time. A 4-page memo from 1994 confirmed that nothing is new.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `THIS WEEK AT THE OAA:\n\n• Dr. Cashburn joined the OAA Research Excellence Initiative with a color-coded binder and a fundability matrix. The research question was refined for the third time. The column headers are unchanged.\n• Form 7.4.2-B requires a countersignature from the Emergency Strategic Response Task Force Student Representative. That is Max. Max was not told.\n• Oliver Grant has added “Co-Investigator, OAA Research Excellence Initiative” to his LinkedIn profile. Meetings attended: 0.\n• A 4-page memo from 1994 has resurfaced, noting that the institution faced a structurally identical situation thirty-two years ago. Nobody has read it.\n\nThe OAA: where everything is unprecedented, except the parts that happened before.\n\n#OAA #OfficeOfAlternateAcademia #AcademicLife #SatireAlert #HigherEd`,
+      instagram: `[VIDEO SCRIPT]\n\nVOICEOVER:\nThis week at the OAA: a color-coded binder arrived. The research question was refined. For the third time. The column headers were not changed. A form needed a countersignature. The countersignature belongs to a student who does not know he is the signatory. A memo from 1994 confirmed that this has happened before. Nobody read it. Progress continues as expected.\n\nVISUAL:\nA color-coded binder placed on a table already covered in papers. A spreadsheet on a screen — column headers clearly unchanged. A sticky note on the laptop screen. A coffee cup in the corner, unattended.\n\nTONE: deadpan, slightly melancholic`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#AcademicLife", "#SatireAlert", "#HigherEd", "#Research", "#Bureaucracy"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A large color-coded binder sits open on a meeting room table; around it, several half-filled coffee cups and stacks of paper; a laptop screen is visible in the background showing a spreadsheet with an untouched column header row; the room is empty of people.\nMood: organized chaos, institutional absurdity.\nNo text, no logos, no real people.`,
+      copy: `This week at the OAA: a binder arrived. The question was refined. The columns were not. A form needed a signature. The signature belongs to Max. Max was not informed. A 1994 memo confirmed the precedent. It remains unread.`
+    },
+    content: `<p>THIS WEEK AT THE OAA:</p><ul><li>Dr. Felicity Cashburn joined the OAA Research Excellence Initiative (OREI) with a color-coded binder and a fundability matrix. The research question was refined for the third time. The column headers in the working dataset are unchanged since version one.</li><li>Form 7.4.2-B requires a countersignature from the Emergency Strategic Response Task Force (ESRTF) Student Representative. That is Max Afterparty. Max was not informed prior to publication.</li><li>Oliver Grant has added “Co-Investigator, OAA Research Excellence Initiative” to his LinkedIn profile. Meetings attended to date: 0.</li><li>Prof. Victor Magnus has submitted a 4-page memo noting that the institution faced a structurally identical situation in 1994. Nobody has read it yet.</li></ul><p>The OAA: where everything is unprecedented, except the parts that happened before.</p>`
+  },
+
+  // BREAKING #5 — Magnus 1994 memo — Saturday May 9, 12:00
+  {
+    id: "magnus-1994-memo",
+    title: "Prof. Magnus Submits 4-Page Memo Noting That the OAA Faced an Identical Situation in 1994; Memo Has Not Been Read",
+    date: "2026-05-09",
+    publish_date: "2026-05-09T12:00",
+    status: "published",
+    thread: "C",
+    format: "breaking",
+    author: "Clara Quark",
+    authorId: "clara-quark",
+    tags: ["Victor Magnus", "Accreditation", "Institution", "History"],
+    excerpt: "Prof. Victor Magnus has submitted a four-page memo to the Emergency Strategic Response Task Force documenting that the OAA faced a structurally identical accreditation situation in 1994. The memo has been received. It has not been read.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `PROF. MAGNUS HAS SUBMITTED A MEMO.\n\nIt is four pages. It documents that the OAA faced an identical accreditation situation in 1994 and handled it in a way he would describe as “instructive.”\n\nThe memo has been received by the Emergency Strategic Response Task Force. It has not been read.\n\nIn 1994, Magnus was junior faculty. He wrote a memo then, too. Nobody read it.\n\n#OAA #OfficeOfAlternateAcademia #VictorMagnus #Accreditation #AcademicLife`,
+      instagram: `[IMAGE CONCEPT]\n\nVISUAL:\nAn elderly professor in tweed places a thin folder — four pages — on a large meeting room table already buried in thick binders and reports. The folder is visibly thinner than everything around it. The room is empty. He walks away.\n\nCAPTION:\nProf. Magnus submitted a memo. Four pages. The OAA faced this exact situation in 1994. The memo has not been read. In 1994, he also wrote a memo. It was also not read.\n\nTONE: dry, melancholic, precisely accurate`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#VictorMagnus", "#Accreditation", "#AcademicLife", "#HigherEd"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: An elderly professor in tweed jacket sets a slim folder of four pages on a very large table already covered in thick binders and stacked reports; the professor is walking away; the folder is tiny against the surrounding mass of documents; the room is otherwise empty.\nCharacter: Victor Magnus — elderly, 1980s academic aesthetic, tweed, carrying his own book under one arm.\nMood: stoic, futile, precise.\nNo text, no logos, no real people.`,
+      copy: `Prof. Magnus has submitted a four-page memo to the ESRTF. It documents that the OAA faced this exact accreditation situation in 1994. The memo is with the committee. The memo has not been read. In 1994, he also submitted a memo. It was also not read.`
+    },
+    content: `<p><strong>🔴 BREAKING | OAA</strong></p>
+
+<p><strong>MAGNUS SUBMITS MEMO ON 1994 PRECEDENT; MEMO REMAINS UNREAD</strong></p>
+
+<p>Prof. Victor Magnus, Emeritus Professor and member of the Historical Compliance Subcommittee, has submitted a four-page memorandum to the Emergency Strategic Response Task Force (ESRTF) documenting that the Office of Alternate Academia faced a structurally identical accreditation review in 1994 and that the institutional response at the time produced outcomes he would characterize as “instructive.”</p>
+
+<p>The memo, dated May 8, was received by the ESRTF Secretariat on Friday morning. As of publication, it has not been read.</p>
+
+<blockquote class="quote-block">
+  <p>“The parallels are not approximate. They are precise. I have indicated this in the document with numbered annotations, cross-references to the original Global Academic Standards Consortium correspondence, and a chronological table. The table begins on page three.”</p>
+  <cite>— Prof. Victor Magnus, Emeritus Professor; Historical Compliance Subcommittee</cite>
+</blockquote>
+
+<p>Magnus was junior faculty during the 1994 review. He submitted a memo at that time as well. That memo also was not read.</p>
+
+<p>The ESRTF has acknowledged receipt. A formal response to the memo is not currently scheduled.</p>`
+  },
+
+  // BREAKING #4 — Astrid OREI comms guidelines — Friday May 8, 12:00
+  {
+    id: "astrid-orei-comms-guidelines",
+    title: "All OREI Communications Now Require Research Communication Clearance Form; Form Requires Completed Form 7.4.2-B to Access",
+    date: "2026-05-08",
+    publish_date: "2026-05-08T12:00",
+    status: "published",
+    thread: "A",
+    format: "breaking",
+    author: "Clara Quark",
+    authorId: "clara-quark",
+    tags: ["Astrid Vox", "Dean Bugsy", "Institution", "Accreditation", "OREI"],
+    excerpt: "Head of Communications Astrid Vox has issued a directive requiring all external communications about the OAA Research Excellence Initiative to be cleared through a new Research Communication Clearance Form. Access to the form requires a completed Form 7.4.2-B. Form 7.4.2-B requires a countersignature. The countersignature requires the form.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `NEW DIRECTIVE FROM COMMUNICATIONS:\n\nAll external communications about the OAA Research Excellence Initiative now require a Research Communication Clearance Form (RCCF).\n\nTo access the RCCF, you need a completed Form 7.4.2-B.\n\nForm 7.4.2-B requires a countersignature before it can be processed.\n\nThe countersignature requires proof of RCCF authorization.\n\nThe OAA: where the form for the form is protected by the form.\n\n#OAA #OfficeOfAlternateAcademia #AstridVox #DeanBugsy #Bureaucracy #AcademicLife`,
+      instagram: `[IMAGE CONCEPT]\n\nVISUAL:\nA flowchart on a whiteboard. Each box leads to another box. The last box leads back to the first. An arrow circles endlessly. The whiteboard marker is still on the tray. The room is empty.\n\nCAPTION:\nAll OREI communications require a clearance form. The clearance form requires Form 7.4.2-B. Form 7.4.2-B requires a countersignature. The countersignature requires the clearance form. The communications office is open Monday to Thursday.\n\nTONE: clinical, absurd`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#AstridVox", "#DeanBugsy", "#Bureaucracy", "#AcademicLife", "#HigherEd"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A whiteboard covered in a circular flowchart diagram; each box connected to the next with arrows that loop back to the start; a marker sits unused in the tray; behind it an empty office with a closed door.\nMood: clinical, looping, quietly absurd.\nNo text, no logos, no real people.`,
+      copy: `All OREI external communications now require a Research Communication Clearance Form. The form requires Form 7.4.2-B. Form 7.4.2-B requires a countersignature. The countersignature requires proof of clearance. The communications office is open Mondays through Thursdays, 10am to 12pm, excluding review periods.`
+    },
+    content: `<p><strong>🔴 BREAKING | OAA</strong></p>
+
+<p><strong>ALL OREI EXTERNAL COMMUNICATIONS NOW REQUIRE CLEARANCE FORM</strong></p>
+
+<p>Astrid Vox, Head of Communications and Public Engagement, has issued a directive requiring that all external communications referencing the OAA Research Excellence Initiative (OREI) be submitted for review through a newly established Research Communication Clearance Form (RCCF) prior to distribution.</p>
+
+<p>The directive, circulated Friday morning, cites the need to “ensure that all OREI-related messaging is aligned with institutional communications strategy and GASC accreditation requirements.”</p>
+
+<p>To access the RCCF, applicants must submit a completed Form 7.4.2-B, issued by the Office of Administrative Affairs. Form 7.4.2-B requires a countersignature from a verified OREI stakeholder before it can be processed. Verification of OREI stakeholder status requires confirmation from the Communications Office. Confirmation from the Communications Office requires a completed RCCF.</p>
+
+<blockquote class="quote-block">
+  <p>“The process protects the integrity of the message. The integrity of the message protects the process. These are not separate things.”</p>
+  <cite>— Astrid Vox, Head of Communications and Public Engagement</cite>
+</blockquote>
+
+<p>Dean Bugsy confirmed that the RCCF has been assigned to the Accreditation-Adjacent Documentation (AAD) Class II category and that a supplementary guidance document explaining how to begin the clearance process is currently in preparation.</p>
+
+<p>No OREI communications have been cleared to date. No OREI communications have been submitted for clearance to date.</p>`
+  },
+
+  // SOCIAL #1 (week 5) — "This Week at OREI" stats — Thursday May 7, 17:00
+  {
+    id: "social-week-5-orei-stats",
+    title: "This Week at OREI — Week 5 Statistics",
+    date: "2026-05-07",
+    publish_date: "2026-05-07T17:00",
+    status: "published",
+    thread: "B",
+    format: "social-only",
+    author: "Astrid Vox",
+    authorId: "astrid-vox",
+    tags: ["OREI", "Research", "Social", "Institution"],
+    excerpt: "This week at the OAA Research Excellence Initiative: three research questions, three versions of the dataset, one color-coded binder, and one Co-Investigator who has not attended a meeting.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `THIS WEEK AT OREI:\n\n📊 Research questions formulated: 3\n📊 Research questions currently active: 1\n📊 Dataset versions: 3\n📊 Column headers changed: 0\n📊 New team members (with meeting attendance): 1\n📊 LinkedIn-designated Co-Investigators (meetings attended): 0\n📊 Color-coded binders introduced: 1\n📊 Data points collected: pending refinement of research question\n\nThe OAA Research Excellence Initiative: making measurable progress toward the definition of a measurable outcome.\n\n#OAA #OREI #OfficeOfAlternateAcademia #Research #AcademicLife #SatireAlert`,
+      instagram: `[IMAGE CONCEPT]\n\nVISUAL:\nA minimalist layout — clean columns with numbers. Research questions: 3 formulated, 1 active. Dataset versions: 3. Column headers changed: 0. New team members with meetings attended: 1. LinkedIn Co-Investigators with meetings attended: 0. Data points collected: pending. The visual is clean, clinical, and quietly devastating.\n\nCAPTION:\nThis week at OREI: three questions. One answer (pending). Three datasets. Zero changed headers. One binder. Progress is ongoing.\n\nTONE: corporate, deadpan, data-driven`,
+      hashtags: ["#OAA", "#OREI", "#OfficeOfAlternateAcademia", "#Research", "#AcademicLife", "#SatireAlert", "#HigherEd"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A clean desk with three clearly distinct versions of the same spreadsheet printout laid side by side; the column headers on all three are visibly identical; a color-coded binder sits beside them; a single handwritten sticky note on the newest printout.\nMood: clinical absurdity, quiet futility.\nNo text, no logos, no real people.`,
+      copy: `This week at OREI: research questions formulated: 3. Research questions active: 1. Dataset versions: 3. Column headers changed: 0. New team members: 1. LinkedIn Co-Investigators: 1. Meetings attended by LinkedIn Co-Investigator: 0. Data collected: pending definition of research question. The initiative continues.`
+    },
+    content: `<p>THIS WEEK AT OREI:</p><ul><li>Research questions formulated: 3. Research questions currently active: 1.</li><li>Dataset versions created: 3. Column headers changed across versions: 0.</li><li>New team members with meeting attendance: 1 (Dr. Felicity Cashburn; attended 1 meeting).</li><li>LinkedIn-designated Co-Investigators with meeting attendance: 1 (Oliver Grant; attended 0 meetings).</li><li>Color-coded binders introduced: 1.</li><li>Data points collected: pending refinement of the active research question.</li></ul><p>The OAA Research Excellence Initiative: making measurable progress toward the definition of a measurable outcome.</p>`
+  },
+
+  // BREAKING #3 — Oliver co-investigator LinkedIn — Thursday May 7, 09:00
+  {
+    id: "oliver-co-investigator-linkedin",
+    title: "Oliver Grant Adds ‘Co-Investigator, OAA Research Excellence Initiative’ to LinkedIn; Has Attended Zero Meetings",
+    date: "2026-05-07",
+    publish_date: "2026-05-07T09:00",
+    status: "published",
+    thread: "B",
+    format: "breaking",
+    author: "Clara Quark",
+    authorId: "clara-quark",
+    tags: ["Oliver Grant", "OREI", "Research", "Students"],
+    excerpt: "Oliver Grant, Student Representative, has updated his LinkedIn profile to include ‘Co-Investigator, OAA Research Excellence Initiative.’ Oliver Grant has attended zero OREI meetings. He was not invited to the meeting at which the research question was refined.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `OLIVER GRANT HAS UPDATED HIS LINKEDIN.\n\nNew role: “Co-Investigator, OAA Research Excellence Initiative.”\n\nMeetings attended: 0.\nInvitations received: 0.\nAcknowledgment from the research team: pending.\n\nOliver described this as “a natural extension of my student leadership portfolio.” He has scheduled an introductory call to discuss his contributions. Nobody has accepted the invitation.\n\n#OAA #OliverGrant #OfficeOfAlternateAcademia #OREI #AcademicLife #AcademicHumor`,
+      instagram: `[IMAGE CONCEPT]\n\nVISUAL:\nA laptop screen showing a professional networking profile. The Experience section displays a new entry at the top. Below it, a meeting calendar shows no scheduled events. The desk is clean and organized, in sharp contrast to a chaotic research space visible through a glass partition behind.\n\nCAPTION:\nOliver Grant has added Co-Investigator, OREI to his profile. Meetings attended: 0. He has scheduled an introductory call. Nobody has accepted.\n\nTONE: dry, mildly sympathetic, precise`,
+      hashtags: ["#OAA", "#OliverGrant", "#OfficeOfAlternateAcademia", "#OREI", "#AcademicLife", "#AcademicHumor", "#HigherEd"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A well-dressed student sits at a neat desk with a laptop open; through a glass partition behind him, a chaotic research space is visible with papers and equipment; the student types with focused attention; a phone on the desk shows a calendar with no upcoming events.\nCharacter: Oliver Grant — well-dressed, phone always nearby, networking smile, overly formal for the setting.\nMood: self-assured obliviousness, quiet irony.\nNo text, no logos, no real people.`,
+      copy: `Oliver Grant has added Co-Investigator, OAA Research Excellence Initiative to his LinkedIn profile. Meetings attended: 0. He has not been invited to a meeting. He has described this as a natural extension of his student leadership portfolio. An introductory call is scheduled. No one has confirmed attendance.`
+    },
+    content: `<p><strong>🔴 BREAKING | OAA</strong></p>
+
+<p><strong>OLIVER GRANT DESIGNATES HIMSELF CO-INVESTIGATOR OF OREI ON LINKEDIN</strong></p>
+
+<p>Oliver Grant, Student Representative (elected with a decisive mandate), has updated his professional profile to include the role of “Co-Investigator, OAA Research Excellence Initiative (OREI)” under current experience. As of publication, Oliver Grant has attended zero OREI meetings, received zero invitations to OREI meetings, and has not been informed of the date, time, or location of any previous or upcoming OREI meeting.</p>
+
+<p>He was not present at Tuesday’s session, during which the research question was refined for the third time.</p>
+
+<blockquote class="quote-block">
+  <p>“The OAA Research Excellence Initiative represents exactly the kind of interdisciplinary, student-engaged research environment I’ve been building toward. I see my role as bringing the student perspective to the investigative process at a structural level.”</p>
+  <cite>— Oliver Grant, Student Representative; Co-Investigator (self-designated), OREI</cite>
+</blockquote>
+
+<p>Oliver has since sent an introductory meeting request to the OREI team to “align on contribution frameworks.” The request has not been accepted. It has not been declined. It is pending.</p>
+
+<p>Dr. Felicity Cashburn, when informed, noted that “student engagement is a fundable dimension of any research portfolio” and suggested Oliver’s profile listing might be “something to revisit during the next application cycle.”</p>
+
+<p>Prof. Arjun Calculon has updated the OREI stakeholder registry to include a new variable: “LinkedIn-designated investigators (unverified).” The current value is 1.</p>`
+  },
+
+  // FOUND MEMO — Cashburn OREI fundability memo — Wednesday May 6, 19:00
+  {
+    id: "cashburn-orei-fundability-memo",
+    title: "FOUND DOCUMENT: Internal Memo — Dr. Cashburn to Prof. Calculon, Re: OREI Fundability Assessment",
+    date: "2026-05-06",
+    publish_date: "2026-05-06T19:00",
+    status: "published",
+    thread: "B",
+    format: "found-memo",
+    author: "Dr. Felicity Cashburn",
+    authorId: "felicity-cashburn",
+    tags: ["Felicity Cashburn", "OREI", "Research", "Funding"],
+    excerpt: "An internal memo from Dr. Felicity Cashburn to Prof. Arjun Calculon, dated May 6, 2026, outlining a preliminary fundability assessment of the OAA Research Excellence Initiative. The postscript requests that the document not be shared with the student coordinator.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `FOUND DOCUMENT:\n\nInternal memo. Dr. Cashburn to Prof. Calculon. Re: OREI Fundability Assessment.\n\nKey points:\n• The current research question “lacks sufficient ambiguity for major grant cycles.”\n• A fourth refinement is recommended before June 15.\n• The OREI has “strong branding potential” regardless of outcomes.\n\nPostscript: “Please do not share this document with the student coordinator.”\n\nThe student coordinator was not told.\n\n#OAA #OfficeOfAlternateAcademia #FelicityCashburn #OREI #Research #Bureaucracy`,
+      instagram: `[IMAGE CONCEPT]\n\nVISUAL:\nA formally formatted internal memo on institutional letterhead. Most of the body is a dense typed paragraph. At the bottom, a handwritten postscript is clearly visible — shorter than the typed content and notably more direct. The memo has been folded once, as though carried in a jacket pocket.\n\nCAPTION:\nA memo was sent. It contained a fundability assessment. It also contained a postscript. The postscript was noted.\n\nTONE: corporate, sharply observed`,
+      hashtags: ["#OAA", "#OfficeOfAlternateAcademia", "#FelicityCashburn", "#OREI", "#Research", "#FoundDocument", "#HigherEd"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A formally typed memo on institutional letterhead lies on a desk; near the bottom of the visible page, a handwritten note is clearly added — shorter and more decisive in tone than the typed content; a pen rests beside the memo; a half-open briefcase is visible at the edge of the desk.\nMood: corporate precision, barely concealed agenda.\nNo text, no logos, no real people.`,
+      copy: `Found document: internal memo, Cashburn to Calculon, OREI fundability assessment. The research question lacks sufficient ambiguity for major grant cycles. A fourth refinement is recommended. The OREI has strong branding potential. Postscript: please do not share this with the student coordinator.`
+    },
+    content: `<div class="found-doc-header">
+  <div class="found-doc-label">FOUND DOCUMENT — Internal Memorandum</div>
+  <div class="found-doc-meta">
+    <span><strong>TO:</strong> Prof. Arjun Calculon, Head, Department of Computational Everything</span>
+    <span><strong>FROM:</strong> Dr. Felicity Cashburn, Director of Research Funding and Grant Strategy</span>
+    <span><strong>DATE:</strong> May 6, 2026</span>
+    <span><strong>RE:</strong> Preliminary Fundability Assessment — OAA Research Excellence Initiative (OREI)</span>
+    <span><strong>CC:</strong> [REDACTED]</span>
+  </div>
+</div>
+
+<p>Arjun,</p>
+
+<p>Following yesterday’s session, I wanted to put a few observations in writing before our next meeting. The work so far is promising, and I think the OREI has genuine potential — but there are some structural adjustments that would significantly improve our positioning for the funding cycles I have in mind.</p>
+
+<p>First: the current research question, in its third formulation, is precise in ways that will create problems. The major grant bodies we should be targeting — and I have three in mind — respond better to questions that carry what I call “productive ambiguity.” A question that can be answered is a question that can be assessed. We want evaluators to feel that the scope is large enough to warrant sustained investment. I would recommend a fourth refinement before June 15, focused on widening the conceptual frame while preserving the methodological detail you’ve established.</p>
+
+<p>Second: the dataset architecture is strong, and I would leave the column structure exactly as it is — this signals continuity across versions and will read well in the methodology section. I would, however, recommend adding a “Supplementary Data Stream” placeholder in version four. Funders respond to infrastructure.</p>
+
+<p>Third: regardless of where the research ultimately lands, the OREI brand has real traction. The name, the acronym, the initiative framing — these are assets. I would suggest we begin thinking about the logo not as a branding exercise but as a grant-readiness signal. Funded research looks like funded research before it is funded.</p>
+
+<p>I’ll have a draft funding matrix to you by Thursday.</p>
+
+<p>Best,<br>
+Felicity</p>
+
+<p><em>P.S. — Please do not share this document with the student coordinator.</em></p>`
+  },
+
+  // BREAKING IJTOAA Art.2 announcement — Wednesday May 6, 12:00
+  {
+    id: "breaking-ijtoaa-1-1-art2",
+    title: "IJTOAA Publishes Second Paper: ‘Recursive Impactlessness’ Confirms That the Impactlessness Index Is Itself Impactless",
+    date: "2026-05-06",
+    publish_date: "2026-05-06T12:00",
+    status: "published",
+    thread: "B",
+    format: "breaking",
+    author: "Astrid Vox",
+    authorId: "astrid-vox",
+    tags: ["IJTOAA", "Publication", "Research", "Arjun Calculon", "Felicity Cashburn", "Rector"],
+    excerpt: "The Interdimensional Journal of The Office of Alternate Academia has published its second peer-reviewed paper. ‘Recursive Impactlessness’ demonstrates that the Impactlessness Index, introduced in Article 1, achieves an impactlessness score of 94.7 on its own metric. The authors describe this as ‘the field’s first verified instance of self-referential excellence.’",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `BREAKING: THE IJTOAA HAS PUBLISHED ITS SECOND PAPER.\n\n“Recursive Impactlessness: A Second-Order Analysis of the Measurability of Previously Unmeasured Unmeasurability”\n\nKey finding: the Impactlessness Index, introduced in Article 1, is itself impactless. It scores 94.7 on its own metric. The authors call this “the field’s first verified instance of self-referential excellence.”\n\nReviewer #2 noted that “the recursive structure raises methodological questions that are, in a sense, unanswerable.” The authors thanked them.\n\n#OAA #IJTOAA #OfficeOfAlternateAcademia #Research #AcademicHumor #Publication`,
+      instagram: `[IMAGE CONCEPT]\n\nVISUAL:\nA formal academic journal lies open on a desk. Beside it, a single circular diagram drawn on a notepad — a loop with arrows pointing back to themselves. A ruler and precise instruments are nearby. The composition is clean and symmetrical. The room is empty.\n\nCAPTION:\nThe Impactlessness Index has been measured for its own impactlessness. It scored 94.7. Out of 94.7. The field’s first verified instance of self-referential excellence.\n\nTONE: celebratory, absurd, deadpan`,
+      hashtags: ["#OAA", "#IJTOAA", "#OfficeOfAlternateAcademia", "#Research", "#AcademicHumor", "#Publication", "#HigherEd"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A formal academic journal lies open on a desk; beside it, a single circular diagram drawn on a notepad — a loop with arrows pointing back to themselves; a ruler and precise instruments are nearby; the composition is clean and symmetrical.\nMood: academic solemnity, self-congratulatory absurdity.\nNo text, no logos, no real people.`,
+      copy: `The IJTOAA has published its second paper. The Impactlessness Index has been measured for its own impactlessness. Score: 94.7 out of 94.7. Reviewer #2 noted that the recursive structure raises questions that are, in a sense, unanswerable. The authors thanked them.`
+    },
+    content: `<p><strong>🔴 BREAKING | OAA</strong></p>
+
+<p><strong>IJTOAA PUBLISHES SECOND PEER-REVIEWED PAPER</strong></p>
+
+<p>The Interdimensional Journal of The Office of Alternate Academia (IJTOAA) has published its second peer-reviewed article: “Recursive Impactlessness: A Second-Order Analysis of the Measurability of Previously Unmeasured Unmeasurability,” authored by Prof. Arjun Calculon, Dr. Felicity Cashburn, and Supreme Grand Rector Infinitum (corresponding author).</p>
+
+<p>The paper extends the findings of Article 1 — which introduced the Impactlessness Index (II) — by applying the II to itself. Results indicate that the Impactlessness Index achieves an impactlessness score of 94.7 on its own metric, matching the theoretical maximum established in the original paper. The authors describe this as “the academic literature’s first verified instance of self-referential excellence.”</p>
+
+<blockquote class="quote-block">
+  <p>“What we have demonstrated is that a truly impactless metric will, when applied recursively, confirm its own impactlessness. This is not a limitation of the methodology. It is the methodology.”</p>
+  <cite>— Prof. Arjun Calculon, first author</cite>
+</blockquote>
+
+<p>Dr. Cashburn contributed the paper’s funding implications section, which argues that recursive impactlessness “represents a scalable model for impact-neutral grant delivery.” The Rector, listed as corresponding author, contributed the abstract’s final sentence and confirmed the institutional affiliation.</p>
+
+<p>Reviewer #2 returned a single comment: “The recursive structure raises methodological questions that are, in a sense, unanswerable. I wish the authors well.” The authors thanked the reviewer in the acknowledgments. No revisions were requested.</p>
+
+<p>The IJTOAA editorial board has confirmed that the paper was subjected to a rigorous review process consistent with the journal’s standards. The standards are not publicly available.</p>`
+  },
+
+  // BREAKING #2 — Max form 742B countersignature — Tuesday May 5, 16:00
+  {
+    id: "max-form-742b-countersignature",
+    title: "Form 7.4.2-B Requires Countersignature from ESRTF Student Representative; Student Representative Is Max Afterparty; Max Was Not Told",
+    date: "2026-05-05",
+    publish_date: "2026-05-05T16:00",
+    status: "published",
+    thread: "C",
+    format: "breaking",
+    author: "Max Afterparty",
+    authorId: "max-afterparty",
+    tags: ["Max Afterparty", "Dean Bugsy", "Accreditation", "Students", "Forms"],
+    excerpt: "Form 7.4.2-B, issued to three parties last week to authorize access to the OAA Research Excellence Initiative, requires a countersignature from the Emergency Strategic Response Task Force Student Representative. The Student Representative is Max Afterparty. Max was informed of this at 2:47 p.m. today. He asked what Form 7.4.2-B was.",
+    coverImage: "",
+    coverAlt: "",
+    social: {
+      facebook: `FORM 7.4.2-B REQUIRES A COUNTERSIGNATURE.\n\nThe countersignature must come from the Emergency Strategic Response Task Force Student Representative.\n\nThe Student Representative is Max Afterparty.\n\nMax was informed of this today at 2:47 p.m. His first question: “What is Form 7.4.2-B?”\n\nHis second: “Wait, am I on that task force?”\n\nHis coffee had gone cold by the time the answer arrived.\n\n#OAA #MaxAfterparty #DeanBugsy #OfficeOfAlternateAcademia #Accreditation #AcademicLife`,
+      instagram: `[IMAGE CONCEPT]\n\nVISUAL:\nA close-up of a form with a blank signature line at the bottom. Beside it, a coffee cup has gone cold — visible condensation ring on the desk. A student ID card is nearby. The form is otherwise very dense with small text.\n\nCAPTION:\nForm 7.4.2-B needs a countersignature. The countersignature belongs to the ESRTF Student Representative. The Student Representative is Max. Max asked what Form 7.4.2-B was.\n\nTONE: absurd, slightly sympathetic, deadpan`,
+      hashtags: ["#OAA", "#MaxAfterparty", "#DeanBugsy", "#OfficeOfAlternateAcademia", "#Accreditation", "#AcademicLife", "#HigherEd"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A form with a blank signature line sits on a desk; beside it, a coffee cup with a cold-looking ring beneath it; a student ID card is partially visible at the edge; in the background, an open door to a corridor, slightly out of focus. A hoodie sleeve and sunglasses resting on the desk suggest a student without showing a face.\nMood: bemused, low-energy, absurd.\nNo text, no logos, no real people.`,
+      copy: `Form 7.4.2-B requires a countersignature from the ESRTF Student Representative. The ESRTF Student Representative is Max Afterparty. Max was informed at 2:47 p.m. His first question was what Form 7.4.2-B was. His second question was whether he was on the task force. He is. He has been since January.`
+    },
+    content: `<p><strong>🔴 BREAKING | OAA</strong></p>
+
+<p><strong>FORM 7.4.2-B COUNTERSIGNATURE REQUIREMENT TRACED TO MAX AFTERPARTY</strong></p>
+
+<p>Form 7.4.2-B, issued last week to three parties to authorize access to the OAA Research Excellence Initiative (OREI), contains a countersignature requirement on page two that was not addressed at the time of distribution. The form specifies that the countersignature must be provided by the Emergency Strategic Response Task Force (ESRTF) Student Representative (Non-Voting).</p>
+
+<p>The ESRTF Student Representative (Non-Voting) is Max Afterparty.</p>
+
+<p>Max was notified of this requirement at 2:47 p.m. today, via email, from the Office of Administrative Affairs. He responded at 3:12 p.m.</p>
+
+<blockquote class="quote-block">
+  <p>“Okay so this is going to sound bad but I need to ask two things. First: what is Form 7.4.2-B. Second: am I on a task force.”</p>
+  <cite>— Max Afterparty, ESRTF Student Representative (Non-Voting); email, 3:12 p.m., May 5, 2026</cite>
+</blockquote>
+
+<p>Max has been the ESRTF Student Representative (Non-Voting) since January. He has attended every ESRTF meeting. He attended them, he confirms, primarily because of the coffee.</p>
+
+<p>Dean Bugsy’s office confirmed that the countersignature requirement is non-negotiable and that Max will need to visit the Office of Administrative Affairs in person to complete the form, during office hours, with valid institutional identification and a completed Form 3.1-REG, which he may obtain upon presentation of his student card and one supporting document. The office is open Tuesday and Thursday mornings.</p>
+
+<p>Today is Tuesday. The office closes at noon.</p>`
+  },
+
+  // ANCHOR — cashburn-enters-orei — Tuesday May 5, 09:00
+  {
+    id: "cashburn-enters-orei",
+    title: "Dr. Cashburn Joins OAA Research Excellence Initiative with Color-Coded Binder; Research Question Refined for Third Time",
+    date: "2026-05-05",
+    publish_date: "2026-05-05T09:00",
+    status: "published",
+    thread: "B",
+    format: "anchor",
+    author: "Clara Quark",
+    authorId: "clara-quark",
+    tags: ["Felicity Cashburn", "OREI", "Research", "Prof. Calculon", "Clara Quark", "Accreditation"],
+    excerpt: "Dr. Felicity Cashburn, Director of Research Funding and Grant Strategy, attended Tuesday morning’s OAA Research Excellence Initiative session with a color-coded binder and a preliminary fundability matrix. The research question was refined for the third time. The column headers in the working dataset have not changed since version one.",
+    coverImage: "images/anchor10.png",
+    coverAlt: "",
+    social: {
+      facebook: `DR. CASHBURN HAS JOINED THE OREI.\n\nShe arrived Tuesday morning with a color-coded binder and a preliminary fundability matrix. The research question was refined for the third time before 10 a.m.\n\nThe column headers in the working dataset have not changed since data_v1.xlsx. There are now three versions of the file. The columns are identical across all three.\n\nProf. Calculon called this “a stable epistemological anchor.” Dr. Cashburn called it “a fundability gap.”\n\nClara opened data_v3.xlsx. She did not say anything.\n\n#OAA #OREI #OfficeOfAlternateAcademia #Research #FelicityCashburn #ProfCalculon #AcademicLife`,
+      instagram: `[IMAGE CONCEPT]\n\nVISUAL:\nA color-coded binder placed open on a meeting table; beside it, a laptop showing a spreadsheet — the column headers visible at the top, clearly identical to a printed version pinned on the wall behind; a sticky note is on the laptop screen. The room is small, functional, and slightly overcrowded with paper.\n\nCAPTION:\nDr. Cashburn brought a binder. The research question was refined. For the third time. The columns are unchanged. There are three versions of the file. The columns are identical in all three.\n\nTONE: deadpan, slightly exhausted`,
+      hashtags: ["#OAA", "#OREI", "#OfficeOfAlternateAcademia", "#Research", "#FelicityCashburn", "#ProfCalculon", "#AcademicLife", "#HigherEd"],
+      image_prompt: `Painterly editorial illustration, slightly satirical, warm muted tones with gold and deep red accents. Academic setting. No text in image. Style: New Yorker cartoon meets university portrait gallery.\n\nScene: A small meeting room. A color-coded binder sits open on the table — tabs visible in several distinct colors. Beside it, a laptop open to a spreadsheet; a printed version of what appears to be the same spreadsheet is pinned on the wall behind, with identical column headers. A young woman sits slightly apart from the binder, looking at the screen with a focused, carefully neutral expression. A sharp-suited woman with gold trim on her blazer stands near the binder.\nCharacters: Dr. Cashburn (sharp suit, gold trim, polished) and Clara Quark (hoodie, competent, slightly tired).\nMood: precise, exhausted, quietly absurd.\nNo text, no logos, no real people.`,
+      copy: `Dr. Cashburn joined the OREI with a color-coded binder and a fundability matrix. The research question was refined for the third time before 10 a.m. The column headers have not changed since version one. There are now three versions of the dataset. The columns are identical across all three. Clara opened data_v3.xlsx. Prof. Calculon described the column stability as a stable epistemological anchor. Dr. Cashburn described it as a fundability gap.`
+    },
+    content: `<p>Dr. Felicity Cashburn arrived at the OAA Research Excellence Initiative (OREI) session at 8:47 a.m. on Tuesday with a color-coded binder, a preliminary fundability matrix she described as “a first pass, not a commitment,” and three specific questions about the research design that she had prepared the previous evening. Prof. Arjun Calculon had set up the room at 8:15. Clara Quark arrived at 8:43 with a laptop and a coffee.</p>
+
+<p>By 9:52 a.m., the research question had been refined for the third time.</p>
+
+<p>The original question — formulated in March and revised twice in April — asked whether academic self-assessment processes at small institutions correlate with measurable improvements in research output over a five-year period. Dr. Cashburn’s suggested revision reframes the question as an investigation into “the structural conditions under which institutional self-evaluation generates transferable knowledge assets,” a formulation she noted was “significantly more legible to interdisciplinary funding panels.”</p>
+
+<blockquote class="quote-block">
+  <p>“The previous versions were answerable. An answerable question is a question with a ceiling. We want a question with a horizon.”</p>
+  <cite>— Dr. Felicity Cashburn, Director of Research Funding and Grant Strategy</cite>
+</blockquote>
+
+<p>Prof. Calculon accepted the revision after a seventeen-minute silence during which he appeared to be running calculations. He described the new formulation as “epistemologically coherent, if somewhat underspecified,” and noted that the research design would need to accommodate the expanded scope “without compromising the existing variable architecture.”</p>
+
+<blockquote class="quote-block">
+  <p>“The question has been refined. The methodology absorbs the refinement. The dataset will require adjustment. I have updated the project log. This is the third update.”</p>
+  <cite>— Prof. Arjun Calculon, Head, Department of Computational Everything</cite>
+</blockquote>
+
+<h3>The dataset</h3>
+
+<p>The working dataset, currently in its third version, has accumulated across two months of preliminary data collection. Clara opened data_v3.xlsx at 10:04 a.m. and did not say anything for approximately ninety seconds.</p>
+
+<p>The column headers in data_v3.xlsx are identical to those in data_v2.xlsx, which are identical to those in data_v1.xlsx. The column headers were established in March, before the first refinement of the research question. They have not been changed across any version.</p>
+
+<p>Prof. Calculon, when this was noted, described the column stability as “a stable epistemological anchor — continuity across iterative refinement is a methodological strength.” Dr. Cashburn, when this was noted separately, described it as “something we might want to revisit in version four.”</p>
+
+<h3>The binder</h3>
+
+<p>Dr. Cashburn’s color-coded binder contains, by her account, “a preliminary overview of the relevant funding landscape, a draft timeline for grant submission cycles, and an initial assessment of the OREI’s positioning relative to comparable initiatives at peer institutions.” The binder has seven tabbed sections. It is color-coded in six colors. Two sections have not yet been filled in.</p>
+
+<p>She has offered to present the full contents at the next session. A date for the next session has not been confirmed.</p>
+
+<h3>Next steps</h3>
+
+<p>Prof. Calculon will update the research design document to reflect the third version of the question. Dr. Cashburn will prepare a fundability matrix for review. Clara will update the dataset.</p>
+
+<p>The deadline for the OREI’s first progress report to the accreditation committee has not changed.</p>`
+  },
+
 
   // ============================================================
   // WEEK 4 — APRIL 27 – MAY 3, 2026 — ACT I: "THE RESPONSE"
